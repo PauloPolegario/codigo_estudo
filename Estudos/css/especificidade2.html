@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Especificidade CSS</title>
+    <style>
+        /* https://specificity.keegan.st/ */
+        /*
+        Ordem crescente de especificação
+        
+        7.Seletores Universais
+        6.Tipo de Seletores
+        5.Classes seletoras
+        4.Atributos Seletores
+        3.Pseudo-classes
+        2.Seletores ID
+        1. Estilo Inline       
+        
+        */
+        body{font-size: 40px; }
+        div{background-color: darkblue; color: #fff;}
+        div[wm-cor]{background-color: darkgoldenrod;}
+        div:hover{background-color: darkorchid;}
+        div.estilo{background-color: darkseagreen;}
+        #unico1 ,#unico2 { background-color: #000};
+    </style>
+</head>
+
+<body>
+    <div id="unico1" class="estilo" style="background-color:red ;">
+        #unico1 vs .estilo vs inline
+    </div>
+    <div id="unico2" class="estilo">#unico2 vs .estilo</div>
+    <div class="estilo" wm-cor>.estilo vs wm-cor</div>
+    <div wm-cor>wm-cor</div>
+    <div class="estilo">.estilo</div>
+    <div>elemento</div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Especificidade CSS</title>
+    <style>
+        /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+   
+        /*
+            Em linhas gerais..
+            1.regras co !important
+            2.seletores mais específicos
+            3.última regra processada (empate)
+        */
+
+        p{
+            background-color: #aaa;
+        }
+
+        .observacao{
+            background-color: chartreuse;
+            border: dashed 5px;
+            padding: 200px !important;
+            font-size: 40px;
+        }
+
+        p.observacao{
+            background:linear-gradient(to right,red,yellow);
+            padding: 2px ;
+        }
+   
+    </style>
+</head>
+
+<body>
+    <p class='observacao'>Olha essa observação!!!!</p> 
+    <p class='observacao'>O Conceito
+        A especificação é a maneira de como
+        os navegadores definem quais valores
+        de propriedades são os mais relevantes
+        para o elemento a ser utilizado. 
+        A especificação é baseada apenas nas
+        regras impostas na composição de diferentes
+        tipos de seletores.</p>
+    
+</body>
+
+</html>

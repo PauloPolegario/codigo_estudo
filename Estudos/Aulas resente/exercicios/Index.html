@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercícios html</title>
+    </head>
+    <body>
+        
+        <header>
+            <h1>Exercício HTML</h1><br>
+        </header>
+
+        <style>
+            #conteudo{
+                padding: 30px 0px;
+            }
+        </style>
+        
+        <nav>
+            <a href="teste.html" target="_blank">--TESTE--</a> |
+            <a href="texto01.html" target="_blank">Texto01</a> |
+            <a href="texto02.html" target="_blank">Texto02</a> |
+            <a href="lista01.html" target="_blank">Listas01</a>|
+            <a href="listasAninhada.html" target="_blank">Listas Aninhadas</a> |
+            <a href="links.html" target="_blank">Links</a> |
+            <a href="tabelas.html" target="_blank">Tabelas</a> |
+            <a href="formulários/form.html" target="_blank">Formulários</a> |
+            <a href="imagem.html" target="_blank">Imagens</a> |
+             <a href="videos.html" target="_blank">Vídeos</a> |
+        </nav>
+
+        <section id="conteudo"></section>
+
+        <footer>
+            Curso de Web Moderno
+        </footer>
+
+       <!---- <script>
+            document.querySelectorAll('a').forEach(link => {
+                const conteudo = document.getElementById('conteudo')
+                
+                link.onclick = function(e) {
+                    e.preventDefault()
+                    fetch(link.href)
+                        .then(resp => resp.text())
+                        .then(html => conteudo.innerHTML = html)
+                }
+            })
+        </script> -->
+
+        
+    </body>
+</html>

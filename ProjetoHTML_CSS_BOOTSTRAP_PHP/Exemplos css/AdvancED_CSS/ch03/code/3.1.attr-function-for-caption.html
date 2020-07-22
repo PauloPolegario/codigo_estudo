@@ -1,0 +1,19 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <title>Using the CSS attr() function for an image's caption</title>
+    <style type="text/css">
+        img[title]:before {
+            content: attr(title);
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <img src="http://upload.wikimedia.org/wikipedia/commons/2/27/Edgar_Allan_Poe_2.jpg"
+            alt="" width="500"
+            title="This photograph of Edgar Allan Poe was taken in 1848 when he was 39, a year before his death." />
+    </p>
+</body>
+</html>

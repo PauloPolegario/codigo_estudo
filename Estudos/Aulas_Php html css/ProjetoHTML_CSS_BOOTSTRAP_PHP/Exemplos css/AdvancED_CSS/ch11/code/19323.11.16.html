@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>enabled, disabled, and checked</title>
+</head>
+<style type="text/css">
+  label { 
+	display:block;
+	margin-top:1em;
+  }
+  input:enabled {
+    border:2px solid green;
+    font-weight:bold;
+    background-color:#edfdda;
+  }
+  input:disabled {
+    font-weight:normal;
+    border:2px solid #666;
+    background-color:#ddd;
+  }
+  input[type="radio"], input[type="checkbox"] { border:none; }
+  input[type="radio"]:disabled, input[type="checkbox"]:disabled { visibility:hidden; }
+  input:checked {
+	background-color:#edfdda;
+	color:#800000;
+	border:2px solid blue;
+	margin-left:4em;
+}
+</style>
+<body>
+<form action="193232.11.16.html" method="post">
+  <label for="instrument_name">Instrument Name</label>
+  <input type="text" name="instrument_name" id="instrument_name" />
+  <label for="instrument_name">Legacy Instrument Name</label>
+  <input type="text" name="legacy_name" id="legacy_name" disabled="disabled" />
+  <p>
+    <label>
+    <input type="radio" name="category" value="strings" />
+    strings</label>
+    <label>
+    <input type="radio" name="category" value="woodwinds" />
+    woodwinds</label>
+    <label>
+    <input type="radio" name="category" value="brass" />
+    brass</label>
+    <label>
+    <input type="radio" name="category" value="percussion" disabled="disabled" />
+    percussion</label>
+    <label>
+    <input name="nonstandard" type="checkbox" disabled="disabled" value="true" />
+    Non-standard instrument</label>
+    <label>
+    <input name="nonstandard" type="checkbox" checked="checked" value="true" />
+    Modern instrument</label>
+  </p>
+  <p>
+    <input type="submit" value="Continue &rarr;">
+  </p>
+</form>
+</body>
+</html>

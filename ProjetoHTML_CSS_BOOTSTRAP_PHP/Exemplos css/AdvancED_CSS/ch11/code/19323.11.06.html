@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>nth child</title>
+	</head>
+	<style type="text/css">
+		p {
+			height:30px;
+			width:110px;
+			margin:0;
+			padding:2px;
+			float:left;
+		}
+		p:nth-last-child(3n+1) { background-color: #6CF; }
+		p:nth-last-child(3n+2) { background-color: #6FC; }
+		p:nth-last-child(3n+3) { background-color: #FC6; }
+		p:nth-last-child(7) { 
+			font-size:1.8em;
+			font-weight:bold;
+			text-align:center;
+			color:#e00000;
+		}
+		p:nth-last-child(even) { color:#fff; }
+		p:nth-last-child(5n) { font-style:italic; }
+	</style>
+	<body>
+		<div id="string_instruments">
+			<p>Violin</p>
+			<p>Viola</p>
+			<p>Cello</p>
+			<p>Double Bass</p>
+			<p>Viola da Gamba</p>
+			<p>Guitar</p>
+			<p>Banjo</p>
+			<p>Mandolin</p>
+			<p>Mandola</p>
+			<p>Mandocello</p>
+			<p>Lute</p>
+			<p>Theorbo</p>
+			<p>Erhu</p>
+			<p>Pipa</p>
+			<p>Guzheng</p>
+			<p>Sitar</p>
+		</div>
+	</body>
+</html>

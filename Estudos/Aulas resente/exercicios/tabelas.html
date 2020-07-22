@@ -1,0 +1,86 @@
+<html>
+    
+    <head>
+        Aulas Sobre Tabelas<br><br>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    </head>
+
+    <body>
+        
+        <table>
+            <caption>Produtos</caption>
+                <thead>
+                   
+                    <tr><!--Caleçalho da tabela-->
+
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Marca</th>
+                        <th>Total</th>
+
+                    </tr>
+
+                </thead>
+                <tbody>
+
+                    <tr><!--Dados da tabela-->
+
+                        <tr>
+
+                            <td>Ipad</td>
+                            <td>3.289,00</td>
+                            <td>5</td>
+                            <td>Aplle</td>
+                            <td>16.445,00</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Tablet s10</td>
+                            <td>3.289,00</td>
+                            <td>5</td>
+                            <td>Sansung</td>
+                            <td>16.445,00</td>
+
+                        </tr>
+
+                                           
+                    </tr>
+                
+                
+                
+                </tbody>
+
+                <tfoot><!--rodapé-->
+                    <tr>
+                        <td colspan="4">Total</td>
+                        <td>37.637,00</td>
+                    </tr>
+                </tfoot>    
+                       
+        </table>
+
+        <style>
+            table{
+                border-collapse: collapse;
+            }
+            th,td{
+                padding: 10;
+            }
+            thead tr{
+                border-bottom: solid 3px #444 ;
+            }
+            tbody tr:hover{
+                background-color: #dedede;
+            }
+            tfoot {
+                background-color: #444;
+                color:#fff;
+                font-weight: bold;
+            }
+        </style>
+
+    </body>    
+</html>

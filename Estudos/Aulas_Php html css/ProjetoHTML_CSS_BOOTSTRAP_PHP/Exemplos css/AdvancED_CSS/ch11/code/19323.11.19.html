@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>word-wrap</title>
+	</head>
+	<style type="text/css">
+		li {
+			width:8em;
+			border:2px dashed #aaa;
+			padding:0.4em;
+			margin-bottom:0.5em;
+		}
+		.broken { word-wrap:break-word; }
+		.unbroken { word-wrap:normal; }
+	</style>
+	<body>
+		Long words, like rules, were meant to be broken:
+		<ul class="broken">
+			<li>Antidisestablishmentarianism</li>
+			<li>Supercalifragilisticexpialidocious</li>
+			<li>Aequeosalinocalcalinoceraceoaluminosocupreovitriolic</li>
+		</ul>
+		On the other hand, why break up a good thing?
+		<ul class="unbroken">
+			<li>Floccinaucinihilipilification</li>
+			<li>Honorificabilitudinitatibus</li>
+			<li>Chargoggagoggmanchauggagoggchaubunagungamaugg</li>
+		</ul>
+	</body>
+</html>

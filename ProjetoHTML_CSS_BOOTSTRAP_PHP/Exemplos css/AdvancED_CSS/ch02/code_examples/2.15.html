@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>CSS Values</title>
+		<style type="text/css" media="all">
+			.colorname { color:green; }
+			.svgcolorname { color:darkolivegreen; }
+			.rgbvalue { color:rgb(85,107,47); }
+			.rgbpercent { color:rgb(33%,42%,18%); }
+			.hex { color:#556B2F; }
+			.em { font-size:2em; }
+			.xheight { font-size:3ex; }
+			.percent { font-size:120%; }
+		</style>
+		<style type="text/css" media="screen">
+			#printstyles { display:none; }
+			.pixel { font-size:36px; }
+		</style>
+		<style type="text/css" media="print">
+			#screenstyles { display:none; }
+			.inch { font-size:0.5in; }
+			.centimeter { font-size:1cm; }
+			.millimeter { font-size:10mm; }
+			.point { font-size:24pt; }
+			.pica { font-size:2pc; }
+		</style>
+	</head>
+	<body>
+		<div id="screenstyles">
+			<h1>Getting to know screen CSS units</h1>
+			<p>These styles apply to screen and print media:</p>
+			<ul>
+				<li class="colorname">color:green</li>
+				<li class="svgcolorname">color:darkolivegreen</li>
+				<li class="rgbvalue">color:85,107,47</li>
+				<li class="rgbpercent">color:(60%,72%,36%)</li>
+				<li class="hex">color:#556B2F</li>
+				<li class="em">font-size:2em</li>
+				<li class="xheight">font-size:3ex</li>
+				<li class="percent">font-size:120%</li>
+			</ul>
+			<p>Pixel units typically only apply to screen media:</p>
+			<ul>
+				<li class="pixel">font-size:36px;</li>
+			</ul>
+		</div>
+		<div id="printstyles">
+			<p>These styles are most effective when used in print media:</p>
+			<ul>
+				<li class="inch">font-size:0.5in</li>
+				<li class="centimeter">font-size:1cm</li>
+				<li class="millimeter">font-size:10mm</li>
+				<li class="point">font-size:24pt</li>
+				<li class="pica">font-size:2pc</li>
+			</ul>
+		</div>
+	</body>
+</html>

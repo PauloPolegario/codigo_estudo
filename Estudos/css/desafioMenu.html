@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        /* body {
+            background-color: darkgrey;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .logo {
+            background-color: rgb(12, 1, 12);
+            height: 100px;
+            width: 100%;
+        }
+
+        .rodape {
+            position: absolute;
+            bottom: 0;
+            background-color: rgb(12, 1, 12);
+            height: 100px;
+            width: 100%;
+        }
+
+        .img {
+            height: 80px;
+            width: 350px;
+            padding-top: 10px;
+        }
+
+        .login {
+            position: absolute;
+            left: 1750px;
+            top: 38px;
+            text-decoration: none;
+            color: #ffff;
+            font-family: Oswald;
+
+        }
+
+        .botao {
+            position: absolute;
+            left: 1800px;
+            top: 30px;
+            text-decoration: none;
+            color: #ffff;
+            font-family: Oswald;
+            padding: 10px 10px;
+            border-radius: 25px;
+        }
+
+        .destaque {
+            color: #FFF;
+            background: rgb(245, 45, 10);
+            box-shadow: 2px 2px 1px 1px #000;
+
+        }
+
+        .menu {
+            position: absolute;
+            left: 500px;
+            top: 20px;
+        }
+
+
+        .menu li {
+            position: relative;
+            display: inline;
+            padding-left: 20px;
+        }
+
+
+        .menu a {
+            text-decoration: none;
+            color: #ffff;
+            font-family: Oswald;
+        }
+
+        .menu a:hover {
+            color: rgb(10, 10, 10);
+            background: blue;
+        }
+
+        .menu-toggle {
+            position: absolute;
+            left: 850px;
+            top: 20px;
+             display: none; 
+        }
+
+
+        @media(max-width: 1100px) {
+            .login {
+                display: none;
+            }
+
+            .botao {
+                display: none;
+            }
+        }
+
+        @media(max-width: 930px) {
+            .menu {
+                display: none;
+            }
+        }
+
+        @media(max-width:920px) {
+            .menu-toggle {
+                position: absolute;
+                left: 850px;
+                top: 20px;
+                display: block;
+            }
+        } */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Oswald', sans-serif;
+            background-color: lightgray;
+        }
+
+        .cabecalho {
+            background: #333;
+            border-bottom: solid 5px #4faddb;
+            height: 80px;
+            box-sizing: content-box;
+        }
+
+        .logo {
+            display: inline-block;
+            height: 80px;
+            padding: 15px;
+        }
+
+        .logo img {
+            height: 100%;
+        }
+
+        .menu-toggle {
+            float: right;
+            color: #eee;
+            background-color: #555;
+            border: solid 1px #777;
+            border-radius: 5px;
+            height: 40px;
+            padding: 10px 20px;
+            margin: 20px 15px;
+        }
+
+        .menu {
+            display: inline-block;
+            vertical-align: top;
+            height: 80px;
+            padding: 25px;
+        }
+
+        .menu ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            display: inline-block;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #eee;
+            font-size: 1.3em;
+            padding: 15px;
+        }
+
+        .autenticacao {
+            float: right;
+            height: 80px;
+            padding: 25px;
+        }
+
+        .autenticacao a {
+            text-decoration: none;
+            color: #eee;
+            font-size: 1.3em;
+            padding: 5px;
+        }
+
+        .menu a:hover {
+            background-color: #4faddb;
+            color: #000;
+        }
+
+        .botao {
+            border-radius: 30px;
+            padding: 10px 25px;
+            margin: 10px;
+        }
+
+        .destaque {
+            background: #f50a31;
+            color: #fff;
+        }
+
+        .rodape {
+            /* box-sizing: content-box; */
+            border-bottom:  solid 5px #4faddb;
+            background: #333;
+            height: 80px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media(min-width: 679px) {
+
+            /* margura mínima 679px some o menu toglle */
+            .menu-toggle {
+                display: none;
+            }
+        }
+
+        @media(max-width: 680px) {
+            .menu {
+                display: none;
+            }
+        }
+
+        @media(max-width: 910px) {
+            .autenticacao {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header class="cabecalho">
+
+        <div class="logo">
+            <a href="#inicio">
+                <img src="http://files.cod3r.com.br/curso-web/logo.png" class="img" alt="Logo" />
+            </a>
+        </div>
+       
+        <button class="menu-toggle">
+            <i class="fa fa-lg fa-bars"></i>
+        </button>
+
+
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
+                <li>
+                    <a href="#cursos">Cursos</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+        <aside class="autenticacao">
+            <a href="#login" class="login">Login</a>
+            <a href="#registar" class="botao destaque">Registrar</a>
+        </aside>
+
+    </header>
+
+    <footer>
+        <div class="rodape">
+            <p></p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        // ...
+    </script>
+</body>
+
+</html>

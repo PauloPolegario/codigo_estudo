@@ -1,0 +1,71 @@
+composers {
+	background-color:#4C4C4C;
+	padding-top:4em;
+	font-family:Georgia, serif;
+	font-size:0.95em;
+}
+composer {
+	display:block;
+	margin:0 auto 1em auto;
+	padding:1em;
+	padding-right:150px;
+	background-color:#fff;
+	width:40%;
+	border-bottom:1px dotted #ccc;
+	background-position:96% 1em;
+	background-repeat:no-repeat;
+}
+
+composer[id="mahler"] { background-image: url(img/mahler.jpg); }
+composer[id="bach"] { background-image: url(img/bach.jpg); }
+composer[id="shostakovich"] { background-image: url(img/shostakovich.jpg); }
+composer[id="beethoven"] { background-image: url(img/beethoven.jpg); }
+composer[id="schubert"] { background-image: url(img/schubert.jpg); }
+composer[id="stravinsky"] { background-image: url(img/stravinsky.jpg); }
+composer[id="dvorak"] { background-image: url(img/dvorak.jpg); }
+composer[id="wuorinen"] { background-image: url(img/wuorinen.jpg); }
+
+name {
+	display:block;
+	font-weight:bold;
+	font-style:italic;
+	font-size: 1.3em;
+	font-family: "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	color:#333;
+}
+work {
+	display: list-item;
+	list-style-type: square;
+	margin-left:2em;
+}
+title {
+	font-style:italic;
+	border-bottom:1px dotted #ccc;
+}
+period {
+	display:block;
+	font-style:italic;
+	margin-bottom:0.5em;
+}
+instrumentation {
+	text-transform: lowercase;
+}
+date:before {
+	content: "(";
+}
+date:after {
+	content: ")";
+}
+instrumentation:before {
+	content: "for ";
+}
+yearbirth:before {
+	content: "b.";
+}
+yeardeath:before {
+	content: "- d.";
+}
+favoriteworks:before {
+	content: "Favorite works";
+	font-weight:bold;
+}

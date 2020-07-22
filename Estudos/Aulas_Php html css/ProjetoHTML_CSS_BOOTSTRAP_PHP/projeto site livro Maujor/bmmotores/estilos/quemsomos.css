@@ -1,0 +1,27 @@
+div#auxiliar ul {  
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	}
+div#principal dd {
+	margin:0;
+	}	
+div#principal dt {
+	margin-top: 20px;
+	margin-bottom: 5px;
+	}
+div#auxiliar li img {
+	display: block;
+	margin-top:35px;
+	margin-bottom:10px;
+	}
+div#auxiliar li {
+	text-align:center;
+	}
+div#auxiliar ul {
+	margin-top:-25px;
+	}
+div#principal dt, div#auxiliar li {
+	color:#f60;
+	font-weight:bold;
+	}	

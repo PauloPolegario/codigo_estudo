@@ -1,0 +1,88 @@
+#principal {
+	width:670px;
+	margin: 20px 10px 50px 50px;	
+	float:left;
+	display:inline;
+	}
+#auxiliar {
+	width:245px;
+	float:right;
+	margin-top:0;
+	margin-bottom:50px;
+	background:#fff url('../imagens/bg-auxiliar.jpg') repeat-x 0 0;
+	min-height:500px;
+	}
+* html #auxiliar {
+	height:500px;
+	}
+dl, dd {
+	margin:0;
+	padding:0;
+	}
+h2 {font-size:20px;}
+
+#auxiliar dl {
+	margin-top:50px;
+	}
+#auxiliar dt {
+	color:#0056a6;
+	font-weight:bold;
+	font-size:14px;
+	margin:20px 0 5px 0;
+	padding-left:40px;
+	}
+#auxiliar dd {
+	margin:2px 0;
+	}
+#auxiliar dd a {
+	display:block;
+	color:#333;
+	text-decoration:none;
+	padding-left:40px;
+	}
+#auxiliar dd a:hover {
+	background:#fff url('../imagens/bullet.gif') 15px no-repeat;
+	color:#f60;
+	}
+form.contato label, form.contato textarea {display:block;}
+form.contato form {width:400px;}
+form.contato input {width:250px;}
+form.contato input#ddd {width:30px;}
+form.contato input#telefone {width:200px;}
+form.contato input#enviar{width:auto;}
+form.contato textarea {width:380px; height:140px;} 
+
+form.contato #ddd-telefone {width:254px;}
+form.contato div.um {float:left;}
+form.contato div.dois {float:right;}
+
+
+form.contato label {margin-top:10px;}
+form.contato select {margin-bottom:25px;}
+form.contato input#enviar {margin-top:10px;}
+div.um, div.dois {margin-bottom:10px;}
+form.contato  {
+ width:450px;
+ margin-top:30px;
+ }
+form.contato fieldset {
+	padding:10px 25px; 
+	border:none;
+	border-top: 1px solid #999;
+	border-left: 1px solid #999;
+	}
+form.contato legend {
+	padding:1px 10px;
+	border:1px solid #999;
+	}
+form.contato label span {color:#c30;}
+form.contato legend {color:#f60;}
+form.contato input, form.contato select,
+form.contato textarea {border:1px solid #999;}
+dt {
+	color:#f60; 
+	font-weight:bold;
+	font-size:14px;
+	margin-bottom:5px;
+	}
+

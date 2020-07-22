@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>web fonts</title>
+	</head>
+	<style type="text/css">
+		@font-face {
+			font-family: "Ink Calligraphy";
+			src:url(ZemusuInkCalligraphy.ttf);
+			/* public domain font by zeimusu @ Open Font Library
+			   from http://openfontlibrary.org/media/files/zeimusu/15
+			   please visit and support the Open Font Library at 
+			   http://openfontlibrary.org/
+			*/
+		}
+		div {
+			width:50%;
+			background-color: #FFFEEA;
+			-moz-border-radius: 20px;
+			-webkit-border-radius: 20px;
+			border-radius:20px;
+			border:1px solid red;
+			-moz-box-shadow: 6px 6px 14px #999;
+			-webkit-box-shadow: 6px 6px 14px #999;
+			box-shadow: 6px 6px 14px #999;
+			padding:1em;
+			margin-bottom:1em;
+			opacity: 1;
+			-webkit-transition: opacity 2s linear;
+		}
+		div:hover {
+		  opacity: 0;
+		}
+		.quote {
+			text-shadow: 2px 2px 4px #666;
+			font-size:1.4em;
+			font-family:"Ink Calligraphy", sans-serif;
+		}
+		p.author {
+			font-style:italic;
+			text-shadow: 
+				hsl(280,100%,50%) 2px 2px 4px, 
+				orange 10px 6px 12px,
+				hsla(140,100%,50%,0.6) -5px -3px 12px;
+		}
+		.author::before { content:"\2014"; }
+	</style>
+	<body>
+		<div class="quote">
+			<p>A painter paints pictures on canvas.  But musicians paint their pictures on silence.</p>
+			<p class="author">Leopold Stokowski</p>
+		</div>
+		<div class="quote">
+			<p>You must play the violin so that fathers will want to keep you away from their daughters.</p>
+			<p class="author">Eric Rosenblith</p>
+		</div>
+	</body>
+</html>

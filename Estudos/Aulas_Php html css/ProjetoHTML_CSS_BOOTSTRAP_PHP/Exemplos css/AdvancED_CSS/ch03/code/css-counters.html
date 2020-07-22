@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <title>CSS Counters for Progressive Enhancement Example</title>
+<style type="text/css">/*<![CDATA[*/
+.hentry {
+    padding-bottom: 2em;
+    counter-reset:
+        num-headings       /* number of sections in this entry */
+        num-links
+        num-visited
+        num-links-internal /* links to other blog posts on this site */
+        num-links-rel-tag  /* rel-tag microformat */
+    ;
+}
+.hentry h2, .hentry h3, .hentry h4, .hentry h5, .hentry h6 { counter-increment: num-headings; }
+.hentry :visited { counter-increment: num-links num-visited; }
+.hentry :link[href^="/blogs/"] { counter-increment: num-links num-links-internal; }
+.hentry .entry-meta a[rel="tag"] { counter-increment: num-links num-links-rel-tag; }
+/* Display the entry's stats on :hover. */
+.hentry:hover { padding-bottom: 0; }
+.hentry:hover:after {
+    display: block; height: 2em;
+    content:
+        "This entry has a total of " counter(num-headings) " sections, " counter(num-links-rel-tag)
+        " tags and " counter(num-links) " links "
+        "(and you've visited " counter(num-visited) " of them). Of these links, "
+        counter(num-links-internal) " point to other blog posts on this site."
+    ;
+}
+/*]]>*/</style>
+</head>
+<body>
+    <p>Below the horizontal rule, there are two <a href="http://microformats.org/wiki/hatom">hAtom microformats</a> representing two hypothetical blog posts. CSS counters are used to gather some stats about each one, which are displayed when you hover your cursor over the <code>hentry</code>.</p>
+    <p>There is still some strangeness happening (wrong counts) when links are visited versus when they are not. Perhaps there are browser bugs to be found here?</p>
+    <hr />
+    <div class="hentry">
+        <h1 class="entry-title"><a href="http://example.com/sample-blog-post/" rel="bookmark">Sample Blog Post</a></h1>
+        <div class="entry-meta">
+            <address class="author vcard">by <a href="http://meitarmoscovitz.com/" class="url fn">Meitar Moscovitz</a></address>
+            <p>Updated on <abbr class="updated" title="2008-12-28">Dec 28<sup>th</sup>, 2008</abbr>.</p>
+            <p>Tagged with: <a href="http://technorati.com/tag/css" rel="tag">CSS</a>, and <a href="http://technorati.com/tag/web-development" rel="tag">Web Development</a>.</p>
+        </div>
+        <div class="entry-content">
+            <h2>Entry Headline</h2>
+            <p>First paragraph of first section of entry.</p>
+            <p><a href="http://en.wikipedia.org/wiki/Lorem_ipsum">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
+            <h2>Another entry heading</h2>
+            <p>Lorem ipsum dolor sit amet, <a href="/blogs/lorem-ipsum/">consectetuer</a> adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
+        </div>
+    </div><!-- END .hentry -->
+
+    <div class="hentry">
+        <h1 class="entry-title"><a href="http://example.com/sample-blog-post/" rel="bookmark">Sample Blog Post</a></h1>
+        <div class="entry-meta">
+            <address class="author vcard">by <a href="//meitarmoscovitz.com/" class="url fn">Meitar Moscovitz</a></address>
+            <p>Updated on <abbr class="updated" title="2008-12-28">Dec 28<sup>th</sup>, 2008</abbr>.</p>
+            <p>Tagged with: <a href="/tag/css" rel="tag">CSS</a>, and <a href="/tag/web-development" rel="tag">Web Development</a>.</p>
+        </div>
+        <div class="entry-content">
+            <h2>Entry Headline</h2>
+            <p>First paragraph of first section of entry.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
+            <h2>Another entry heading</h2>
+            <p>Lorem ipsum dolor sit amet, <a href="/blogs/lorem-ipsum/">consectetuer</a> adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
+        </div>
+    </div><!-- END .hentry -->
+</body>
+</html>

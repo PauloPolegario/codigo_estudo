@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <title>Nested Counters Example</title>
+<style type="text/css">/*<![CDATA[*/
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+    }
+    ol li:before {
+        counter-increment: item;
+        content: "[" counters(item, ".") "] ";
+    }
+/*]]>*/</style>
+</head>
+<body>
+    <ol>
+        <li>Lorem</li>
+        <li>ipsum
+            <ol>
+                <li>dolor</li>
+                <li>sit</li>
+                <li>amet
+                    <ol>
+                        <li>consectetuer</li>
+                        <li>adipiscing</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>elit,</li>
+    </ol>
+
+    <ol>
+        <li>eiusmod</li>
+        <li>tempor</li>
+    </ol>
+</body>
+</html>

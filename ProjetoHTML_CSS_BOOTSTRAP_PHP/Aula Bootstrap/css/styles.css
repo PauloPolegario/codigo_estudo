@@ -1,0 +1,52 @@
+body{
+	font-size: 18px;
+	background-color: #F5F5F5;
+}
+
+article{
+	width: 80%;
+	margin: 20px auto;
+
+}
+
+article header h1{
+	font-size: 45px;
+	text-transform: capitalize;
+}
+
+article .container{
+	columns: 3;
+	-webkit-columns: 3;/*para versões antigas chrome  */
+	-moz-columns: 3;    /* Para o Firefox */
+	
+	column-gap: 40px;
+	-webkit-column-gap: 40px;/**para versões antigas chrome  **/
+	
+	text-align: justify;
+}
+
+article .container p {
+	margin:0 0 20px 0;
+}
+
+article .container p:first-child :first-letter {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+@media (max-width: 767px) {
+	
+	article header h1{
+	font-size: 24px;
+	text-transform: capitalize;
+	}
+
+	article .container{
+	columns: 1;
+	-webkit-columns: 1;/*para versões antigas chrome  */
+	-moz-columns: 1;    /* Para o Firefox */
+	
+		
+	text-align: justify;
+}
+}

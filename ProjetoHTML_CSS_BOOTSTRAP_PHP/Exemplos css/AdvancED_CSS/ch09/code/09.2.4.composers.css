@@ -1,0 +1,27 @@
+composers {
+	background-color:#4C4C4C;
+	padding-top:4em;
+	font-family:Georgia, serif;
+	font-size:0.95em;
+}
+composer {
+	display:block;
+	margin:0 auto 1em auto;
+	padding:1em;
+	background-color:#fff;
+	width:50%;
+	border-bottom:1px dotted #ccc;
+}
+name {
+	display:block;
+	font-weight:bold;
+}
+work {
+	display: list-item;
+	list-style-type: square;
+	margin-left:2em;
+}
+period {
+	display:block;
+	font-style:italic;
+}

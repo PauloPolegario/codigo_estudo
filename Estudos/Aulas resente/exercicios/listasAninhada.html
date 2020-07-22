@@ -1,0 +1,79 @@
+<html>
+    <head>
+
+        <h1>Projeto list</h1>
+        <h2>Listas Aninhadas</h2>
+        <meta charset="utf-8">
+
+
+    </head>
+
+    <body>
+
+        <ul class="tree">
+
+            <li>
+                <samp wm-folder>Backend</samp>
+                <ul>
+                    <li>
+                        <samp wm-folder>app</samp>
+                        <ul>
+                            <li>produdo.js</li>
+                            <li>usuario.js</li>
+                            <li>venda.js</li>
+                            <li>compra.js</li>
+                            <li>
+                                <samp wm-folder>Sistema</samp>
+                                <ul>
+                                    <li>Os</li>
+                                    <li>Androide</li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                
+
+                
+                    <li>
+                        <samp wm-folder>config</samp>
+                        <ul>
+                            <li>banco.js</li>
+                            <li>rotas.js</li>
+                            <li>servidor.js</li>
+                            <li>descricao.js</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            
+            <li>
+                <samp wm-folder>Frontend</samp>
+                <ul>
+                    <li>
+                        <samp wm-folder>public</samp>
+                        <ul>
+                            <li>app.css</li>
+                            <li>app.js</li>
+                            <li>app.html</li>
+                        </ul>
+                    </li>
+                 </ul>
+            </li>    
+                   
+        </ul>
+
+        <link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+        <script>
+            document.querySelectorAll('[wm-folder]').forEach(folder=>{
+                folder.onclick = function(e){
+                    const ul = folder.nextElementSibling
+                    const d = ul.style.display
+                    ul.style.display = d === 'none' ? 'block':'none'
+                }
+            })
+
+        </script>
+    </body>
+</html>

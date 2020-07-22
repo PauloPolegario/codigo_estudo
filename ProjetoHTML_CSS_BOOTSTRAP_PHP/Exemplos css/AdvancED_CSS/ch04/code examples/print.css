@@ -1,0 +1,64 @@
+/* print css */
+a {
+	text-decoration:none;
+	color:#333;
+	border-bottom:1pt solid #DDD;
+}
+h1, h2 {
+	font-family:"Edwardian Script ITC", "Monotype Corsiva", cursive;
+	font-weight:normal;
+	margin-bottom:0;
+	page-break-after:avoid;
+}
+h1 {
+	font-size:32pt;
+}
+h2 {
+	font-size:18pt;
+}
+h2 a {
+	border:0;
+}
+p {
+	line-height:2;
+}
+dl {
+	width:8cm;
+	float:right;
+	text-align:center;
+	margin:5em 0;
+}
+dt {
+	font-style:italic;
+	margin:0; padding:0;
+}
+dl > dt:first-child {
+	display:none;
+}
+dd {
+	font-weight:bold;
+	margin:0; padding:0;
+}
+.photo {
+	width:3cm;
+	height:4cm;
+}
+.layout {
+	font-family: Garamond, "Times New Roman", Times, serif;
+	font-size:10pt;
+	line-height:1.5;
+	color:#191919;
+}
+.experience {
+	page-break-inside:avoid;
+}
+.vcard .summary {
+	font-style:italic;
+	letter-spacing: 0.1em;
+}
+#sitenav {
+	display:none;
+}
+#education {
+	page-break-before:always;
+}

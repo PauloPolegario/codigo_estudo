@@ -1,0 +1,208 @@
+body{
+	background: #ccc; /*fundo cinza claro em volta do layout*/
+	color: #333;      /*texto com cor preta, por padão*/
+	margin:0;
+	padding:0;
+	font: 12px/1.4 Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+#tudo{
+	background: #fff; /*fundo branco em volta do layout*/
+	width: 980px;
+	margin:0 auto;
+	text-align: left;
+}
+
+#topo{
+	position: relative;/*cria um contexto de posicionament inicial para coodernadoas no canto superior esquerdo do topo */
+	width:980px;   /*largura do todo*/
+	height: 100px; /*altura do todo*/
+	background:#f60 url('../imagens/bg-topo.jpg') no-repeat;
+}
+
+#topo h1{
+	margin:0; /*evita a margem no topo*/
+	position: absolute;
+	left: 50px;
+	top: 15px;
+	font-size: 28px;
+} 
+	
+#topo span{color: #fff;} /*cor branca na palavra motores*/
+
+ul#nav{
+	position:absolute;
+	left:50px;
+	top:75px;
+	margin:0;
+	padding:0;
+}
+
+ul#nav li{
+	
+	display: inline;   /*coloca os itens na horizontal*/
+	margin-right: 5px; /*insere um espaçamento entre cada intem da lista*/
+	list-style-type: none; /*retira o marcador padrão das listas*/
+}
+
+ul#nav li a{
+	float: left;				/*corrige o bug do ie7*/
+	color: #fff; 				/*texto nos link na cor braca*/
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;		/*retira o sublinhado do links*/
+	text-transform: uppercase;	/*textos dos links em maúsculas independende da escrita e da marcação*/
+	padding: 3px 15px 7px 15px;			/*espaço entre os links*/
+}
+
+ul#nav a:hover{
+	background: #f63 url('../imagens/bg-over.jpg') repeat-x 0 0; /*coloca cor de fundo nos links no entado mouse over*/
+}
+
+#busca{
+	position:absolute;
+	right: 20px;
+	top: 75px;
+	margin:0; /*margin e padding são declarações para padronizar margens e espaçamento em diferentes navegadores*/
+	padding:0;
+	color: #fff;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+
+
+#busca label input{
+	background: #fff; /*cor de fundo do campo busca*/
+	border: none;	  /*retira a borda-padrão do campo de busca*/	
+}
+
+#busca input#submit{
+	background: #c30;		/*cor de fundo do botão ok*/
+	border: 2px solid #f66; /*borda do botão ok*/
+	color: #fff;
+	font-size:10px;
+}
+
+#principal{
+	width:500px;
+	margin-left:50px;
+	margin-right: 80px;
+	display: inline;
+	float: left;
+	margin-top:20px;
+	margin-bottom:50px;
+}
+
+#principal a:hover{
+	color:#f90;
+	text-decoration: none;
+}
+
+#principal a, #principal a{
+	color:#f63;
+} 
+
+#principal p{
+	margin-top:10px;
+}
+
+#auxiliar{
+	width:350px;
+	/*float: right; ficou de fora*/ 
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+#rodape{
+	height: 20px;
+	clear: both;
+	background: #fc6;
+	margin:0;
+
+}
+
+
+
+#rodape p span{
+	color:#f60;
+	font-weight: bold;
+}
+
+#rodape p{
+	margin-left:50px;
+	font-size: 0.9em;
+	line-height: 2;
+}
+
+h2{
+	font-size: 26px;
+	color: #0056a6;
+	margin: 30px 0 10px 0;
+}
+
+p.pular{margin:0;}
+p.pular a {
+	display: block;
+	text-align: right;
+	padding-right: 10px;
+	color: #fff;
+}
+
+p.pular a:hover{
+	background: #fff;
+	color: #333;
+}
+
+/*abaixo segue a estilização da quemsomos*/
+
+
+#auxiliar ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#auxiliar li img{
+	display:block;
+	
+}
+
+
+#auxiliar li{
+	list-style-type: none;
+}
+
+#auxiliar li img{
+	text-align:center;
+	margin-top:35px;
+	margin-bottom:10px;
+}
+
+
+#principal dt{
+	margin-top:20px;
+	margin-bottom:5px;
+}
+
+
+#princpal dd{
+	margin:0;
+}
+
+#principal dt, #auxiliar li {
+	color:#f60;
+	font-weight:bold;
+	
+}
+
+/* Estiliza o link corrente na navegacao horizontal */
+body#index ul#nav li a#in, body#quemsomos ul#nav li a#qs, 
+body#produtos ul#nav li a#pr, body#contatos ul#nav li a#co,
+body#sucesso ul#nav li a#co {  
+	background:#f63 url('../imagens/bg-over.jpg') repeat-x 0 0;
+	}
+/* Nota: exceto as regras para #principal e #auxiliar que sao exclusivas para a Home Page 
+e a pagina Quem Somos as demais serao aplicadas em todas as paginas do site */
+ 

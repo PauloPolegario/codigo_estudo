@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="09.2.1.composers.css" ?>
+<!DOCTYPE composers SYSTEM "composers.dtd">
+<composers>
+	<composer id="mahler">
+		<name>
+			<givenname>Gustav</givenname>
+			<surname>Mahler</surname>
+		</name>
+		<yearbirth>1860</yearbirth>
+		<yeardeath>1911</yeardeath>
+		<period>Post-Romantic</period>
+		<favoriteworks>
+			<work>
+				<title>Symphony No.2</title>
+				<date>1894</date>
+				<instrumentation>Full orchestra</instrumentation>
+			</work>
+			<work>
+				<title>Symphony No.6</title>
+				<date>1906</date>
+				<instrumentation>Full orchestra</instrumentation>
+			</work>
+		</favoriteworks>
+	</composer>
+	<composer id="bach">
+		<name>
+			<givenname>Johann Sebastian</givenname>
+			<surname>Bach</surname>
+		</name>
+		<yearbirth>1685</yearbirth>
+		<yeardeath>1750</yeardeath>
+		<period>Baroque</period>
+		<favoriteworks>
+			<work>
+				<title>Suite in E minor, BWV 996</title>
+				<instrumentation>Lute</instrumentation>
+			</work>
+			<work>
+				<title>BWV 1006a — Suite in E major</title>
+				<instrumentation>Lute</instrumentation>
+			</work>
+			<work>
+				<title>BWV 1009 — Suite No. 3 in C major</title>
+				<instrumentation>Cello</instrumentation>
+			</work>
+			<work>
+				<title>Matthäuspassion – BWV 244</title>
+				<date>1727</date>
+				<instrumentation>Solo voices, double choir and double orchestra</instrumentation>
+			</work>
+		</favoriteworks>
+	</composer>
+	<composer id="shostakovich">
+		<name>
+			<givenname>Dmitri</givenname>
+			<surname>Shostakovich</surname>
+		</name>
+		<yearbirth>1906</yearbirth>
+		<yeardeath>1975</yeardeath>
+		<period>Modern</period>
+		<favoriteworks>
+			<work>
+				<title>Symphony No.4</title>
+				<date>1936</date>
+				<instrumentation>Full orchestra</instrumentation>
+			</work>
+		</favoriteworks>
+	</composer>
+	<composer id="beethoven">
+		<name>
+			<givenname>Ludwig</givenname>
+			<surname>van Beethoven</surname>
+		</name>
+		<yearbirth>1770</yearbirth>
+		<yeardeath>1827</yeardeath>
+		<period>Romantic</period>
+		<favoriteworks>
+			<work>
+				<title>Symphony No. 9 in D minor, Op. 125 "Choral"</title>
+				<date>1824</date>
+				<instrumentation>Full orchestra, chorus, SATB soloists</instrumentation>
+			</work>
+			<work>
+				<title>Septet in E flat major, Opus 20</title>
+				<date>1802</date>
+				<instrumentation>vl, vla, vc, db, horn, clarinet, bassoon</instrumentation>
+			</work>
+			<work>
+				<title>Große Fugue</title>
+				<date>1826</date>
+				<instrumentation>2vl, vla, vc</instrumentation>
+			</work>
+		</favoriteworks>
+	</composer>
+	<composer id="schubert">
+		<name>
+			<givenname>Franz</givenname>
+			<surname>Schubert</surname>
+		</name>
+		<yearbirth>1797</yearbirth>
+		<yeardeath>1828</yeardeath>
+		<period>Romantic</period>
+		<favoriteworks>
+			<work>
+				<title>Octet</title>
+				<date>1824</date>
+				<instrumentation>2vl, vla, vc, db, horn, clarinet, bassoon</instrumentation>
+			</work>
+		</favoriteworks>
+	</composer>
+	<composer id="stravinsky">
+		<name>
+			<givenname>Igor</givenname>
+			<surname>Stravinsky</surname>
+		</name>
+		<yearbirth>1882</yearbirth>
+		<yeardeath>1971</yeardeath>
+		<period>Modern</period>
+		<favoriteworks>
+			<work>
+				<title>The Rite of Spring</title>
+				<date>1913</date>
+				<instrumentation>Full Orcestra</instrumentation>
+			</work>
+		</favoriteworks>
+	</composer>
+	<composer id="dvorak">
+		<name>
+			<givenname>Antonín</givenname>
+			<surname>Dvořák</surname>
+		</name>
+		<yearbirth>1841</yearbirth>
+		<yeardeath>1904</yeardeath>
+		<period>Romantic</period>
+		<favoriteworks>
+			<work>
+				<title>Quintet</title>
+				<date>1875</date>
+				<instrumentation>2vl, vla, vc, db</instrumentation>
+			</work>
+			<work>
+				<title>Symphony No. 9, in E Minor "From the New World" (Op. 95)</title>
+				<date>1893</date>
+				<instrumentation>Full orchestra</instrumentation>
+			</work>
+		</favoriteworks>
+	</composer>
+	<composer id="wuorinen">
+		<name>
+			<givenname>Charles</givenname>
+			<surname>Wuorinen</surname>
+		</name>
+		<yearbirth>1938</yearbirth>
+		<period>Modern</period>
+		<favoriteworks>
+			<work>
+				<title>Spinoff</title>
+				<instrumentation>violin, bass, congas</instrumentation>
+			</work>
+		</favoriteworks>
+	</composer>
+</composers>

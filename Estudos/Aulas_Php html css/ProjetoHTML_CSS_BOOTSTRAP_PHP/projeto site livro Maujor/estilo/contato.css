@@ -1,0 +1,84 @@
+/*estilização do formulário*/
+form#contato label, textarea {display: block;}
+form#contato {width: 400px;}
+form#contato input{width: 250px;}
+form#contato input#ddd {width: 30px;}
+form#contato input#telefone {width: 210px;}
+form#contato input#enviar{width: auto;}
+form#contato textarea {width: 380px; height: 140px;}
+form#contato #ddd-telefone {width: 254px;}
+form#contato div.um {float: left;}
+form#contato div.dois {float: right;}
+form#contato label  {margin-top: 10px;}
+form#contato seletc {margin-bottom: 25px;}
+form#contato input#enviar  {margin-top: 10px;}
+div.um, div.dois {margin-bottom: 10px;}
+
+form#contato{
+	width: 450px;
+	margin-top: 30px;
+	}
+
+form#contato fieldset{
+	padding: 10px 25px;
+	border: none;
+	border-top: 1px solid #ccc;
+	border: 1px solid #ccc;
+	}
+	
+form#contato legend{
+	padding: 1px 10px;
+	border: 1px solid #ccc;
+	}
+
+form#contato lebal span {color: #c30;}
+form#contato legend {color: #f60;}
+form#contato input, form#contato seletc, form#contato textarea {border: 1px solid #999;}
+
+dt{
+	color: #f60;
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 5px;
+	}
+	
+/*estilização do auxiliar*/
+
+#auxiliar {
+	width:245px;
+	float:right;
+	margin-top:0;
+	margin-bottom:50px;
+	background:#666;
+	min-height:500px;
+	background:#fff url('../imagens/bg-auxiliar.jpg') repeat-x 0 0;
+	min-height:500px;
+	}/*lagura para coluna auxiliar*/
+	
+	
+* html #auxiliar {
+	height:500px;
+	}
+	
+#auxiliar dd a:hover {
+	background:#fff url('../imagens/bullet.gif') 15px no-repeat;
+	color:#f60;
+	}
+	
+#auxiliar dt {
+	color:#0056a6;
+	font-weight:bold;
+	font-size:14px;
+	margin:20px 0 5px 0;
+	padding-left:40px;
+	}
+
+#auxiliar dd {margin:2px 0;}
+	
+#auxiliar dd a {
+	display:block;
+	color:#333;
+	text-decoration:none;
+	padding-left:40px;
+	}
+	

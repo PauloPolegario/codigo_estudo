@@ -1,0 +1,87 @@
+body {
+	margin:0;
+	padding:0;
+}
+div.layout {
+	width:100%;
+	margin:0;
+	border:0;
+}
+#sitenav {
+	margin-left:-12px;
+}
+div#sitenav a {
+	width:97.7%;
+	font-size:1.9em;
+	margin:0;
+	border:1px solid #333;
+	text-align:center;
+}
+div#sitenav a[href="http://natasha.example.com/"] {
+	background-image:url(bak.png);
+	background-position:top right;
+	background-size:150%;
+	color:#000;
+	font-family:"Trebuchet MS", sans-serif;
+	font-style:italic;
+	font-weight:bold;
+}
+div#sitenav a[href="http://natasha.example.com/"]:before {
+	content: "Natasha O'Reilly, Baroque Cellist (";
+}
+div#sitenav a[href="http://natasha.example.com/"]:after {
+	content: ")";
+}
+dl {
+	padding:0;
+	width:48%;
+}
+dt, dd {
+	margin:0;
+	text-align:center;
+	font-size:1.5em;
+}
+dd a {
+	height:2em;
+	display:block;
+	padding-bottom:0.5em;
+}
+.photo {
+	width:234px;
+	height:312px;
+	margin:1em auto;
+	display:block;
+	border:1px solid #111;
+}
+p a, #interests a {
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+}
+#interests li {
+	line-height:2;
+}
+h1#bw-name {
+	padding-top:1em;
+}
+
+/* Webkit-specific rules */
+a {
+	-webkit-tap-highlight-color:rgba(255,128,0,0.2);
+}
+dl {
+	opacity:0.25;
+	-webkit-transform:skew(-30deg) rotate(-8deg) translate(-5em,-10em) scale(1.5);
+	-webkit-box-shadow:2px 10px 13px rgba(0,0,0,0.5);
+	-webkit-transition-duration:2s;
+	-webkit-transition-timing-function:ease-in;
+	
+}
+dl:hover {
+	-webkit-transform: skew(0deg) rotate(0deg) translate(0,0) scale(1);
+	opacity:1;
+	-webkit-border-radius:20px;
+}
+div#sitenav a[href="http://natasha.example.com/av/"] {
+	-webkit-border-bottom-left-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+}

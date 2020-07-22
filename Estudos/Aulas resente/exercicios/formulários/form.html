@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Formulários</title>
+        <meta charset="utf-8">
+    </head>
+
+    <bory>
+
+        <h1>Cad Formi</h1>
+        
+        <form action="resultado.html" method="POST">
+            <p>Digite seu nome: <input placeholder="  Nome" type="text" name="nome"></p>
+            <p>Digite sua senha:<input type="password" name="senha"></p>
+            <p><textarea  cols="20" rows="10" name="texto" placeholder="Digite o texto:"></textarea></p>
+            
+            <div>
+                <input type="checkbox" name="tipo">Php
+                <input type="checkbox" name="tipo">Java
+                <input type="checkbox" name="tipo">Go
+                <input type="checkbox" name="tipo">Python
+            </div>
+
+            <div>
+                <p> Ativo <input type="radio" name="opcao">
+                 Inativo <input type="radio" name="opcao"></p>
+            </div>
+
+            <select>
+                <option >Selecione:</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="mg">Minas Geras</option>
+                <option value="es">Espírito Santo</option>
+                
+            </select>
+            
+            <br><br><br><br><br><br>
+
+            <select name="interesses"  multiple size="4">
+                
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="mg">Minas Geras</option>
+                <option value="es">Espírito Santo</option>
+                
+            </select>
+            
+            <p><button formaction="resultado.html" >Salvar</button></p>
+        </form>
+
+        
+
+    </bory>
+</html>

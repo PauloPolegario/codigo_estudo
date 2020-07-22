@@ -1,0 +1,29 @@
+<!ELEMENT composers ( composer+ ) >
+
+<!ELEMENT composer ( favoriteworks | name | period | portrait | yearbirth | yeardeath )* >
+
+<!ELEMENT date ( #PCDATA ) >
+
+<!ELEMENT favoriteworks ( work+ ) >
+
+<!ELEMENT givenname ( #PCDATA ) >
+
+<!ELEMENT instrumentation ( #PCDATA ) >
+
+<!ELEMENT name ( givenname, surname ) >
+
+<!ELEMENT period ( #PCDATA ) >
+
+<!ELEMENT portrait ( #PCDATA ) >
+
+<!ELEMENT surname ( #PCDATA ) >
+
+<!ELEMENT title ( #PCDATA ) >
+
+<!ELEMENT work ( date | instrumentation | title )* >
+
+<!ELEMENT yearbirth ( #PCDATA ) >
+
+<!ELEMENT yeardeath ( #PCDATA ) >
+
+<!ATTLIST composer id CDATA #REQUIRED>
