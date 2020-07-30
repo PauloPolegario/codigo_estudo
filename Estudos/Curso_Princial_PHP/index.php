@@ -61,23 +61,30 @@
                         <li><a href="exercicio.php?dir=variaveis&file=interpolacao">Interpolação</a></li>
                         <li><a href="exercicio.php?dir=variaveis&file=variaveis_variaveis">Variáveis variaveis</a></li>
                         <li><a href="exercicio.php?dir=variaveis&file=desafio_variaveis2">Desafio variáveis variáveis</a></li>
+                        <li><a href="exercicio.php?dir=variaveis&file=constante">Contantes</a></li>
+                    </ul>
+
+                </div>
+              
+              
+              
+                <div class="modulo marrom">
+                    <h3>Controle</h3>
+                    
+                    <ul>
+                        <li><a href="exercicio.php?dir=controle&file=if_else">If  Else</a></li>
+                        <li><a href="exercicio.php?dir=controle&file=op.relacionais">OP.relacionais</a></li>
+                        <li><a href="exercicio.php?dir=controle&file=desafio_pi">Desafio PI</a></li>
+                        <li><a href="exercicio.php?dir=controle&file=op.logico">OP. Lógico</a></li>
+                        <li><a href="exercicio.php?dir=controle&file=desafio_op_logicos">Desafio OPs. Lógicos</a></li>
+                        <li><a href="exercicio.php?dir=controle&file=op.ternario">OP. Ternário</a></li>
+                        <li><a href="exercicio.php?dir=controle&file=switch">Switch</a></li>
+                        <li><a href="exercicio.php?dir=controle&file=desafio_switch">Desafio Switch</a></li>
                         
                     </ul>
 
                 </div>
-              
-              
-              
-                <!--<div class="modulo marrom">
-                    <h3>Módulo 04</h3>
-                    
-                    <ul>
-                        <li><a href="#">Exercício A</a></li>
-                        <li><a href="#">Exercício B</a></li>
-                        <li><a href="#">Exercício C</a></li>
-                    </ul>
-
-                </div>
+                <!--
                 <div class="modulo oliva">
                     <h3>Módulo 05</h3>
                     
