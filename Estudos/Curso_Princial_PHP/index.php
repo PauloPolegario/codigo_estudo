@@ -84,18 +84,27 @@
                     </ul>
 
                 </div>
-                <!--
+                
                 <div class="modulo oliva">
-                    <h3>Módulo 05</h3>
+                    <h3>Arrays</h3>
                     
                     <ul>
-                        <li><a href="#">Exercício A</a></li>
-                        <li><a href="#">Exercício B</a></li>
-                        <li><a href="#">Exercício C</a></li>
+                    <li><a href="exercicio.php?dir=Arrays&file=basico">Arrays</a></li>
+                    <li><a href="exercicio.php?dir=Arrays&file=mapa">Mapa Arrays</a></li>
+                    <li><a href="exercicio.php?dir=Arrays&file=desafio_array">Desafio Arrays</a></li>
+                    <li><a href="exercicio.php?dir=Arrays&file=desafio_meses">Desafio meses</a></li>
+                    <li><a href="exercicio.php?dir=Arrays&file=operacoes">Operações</a></li>
+                    <li><a href="exercicio.php?dir=Arrays&file=desafio_sorteio">Desafio sorteio</a></li>
+                    <li><a href="exercicio.php?dir=Arrays&file=multidirecionais">Multidirecionais</a></li>
+                    <li><a href="exercicio.php?dir=Arrays&file=constantes">Constantes</a></li>
+                    <li><a href="exercicio.php?dir=Arrays&file=get">$_GET</a></li>
+                    <li><a href="exercicio.php?dir=Arrays&file=post">$_POST</a></li>
+                    <li><a href="exercicio.php?dir=Arrays&file=comparacao">Comparações Arrays</a></li>
+                    
                     </ul>
 
                 </div>
-                <div class="modulo purpura">
+                <!-- <div class="modulo purpura">
                     <h3>Módulo 06</h3>
                     
                     <ul>
