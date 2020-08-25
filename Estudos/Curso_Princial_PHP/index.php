@@ -119,17 +119,26 @@
                     </ul>
 
                 </div>
-                <!--<div class="modulo fucsia">
-                    <h3>Módulo 07</h3>
+               
+                <div class="modulo fucsia">
+                    <h3>Funções</h3>
                     
                     <ul>
-                        <li><a href="#">Exercício A</a></li>
-                        <li><a href="#">Exercício B</a></li>
-                        <li><a href="#">Exercício C</a></li>
+                    <li><a href="exercicio.php?dir=funcoes&file=funcoes_escopo">Funções Escopo</a></li>
+                    <li><a href="exercicio.php?dir=funcoes&file=argu_retorno">Argumentos e retornos</a></li>
+                    <li><a href="exercicio.php?dir=funcoes&file=palindromo">Desafio Palindromo</a></li>
+                    <li><a href="exercicio.php?dir=funcoes&file=arg_variaveis">Argumentos variáveis</a></li>
+                    <li><a href="exercicio.php?dir=funcoes&file=arg_padrao">Argumento padrão</a></li>
+                    <li><a href="exercicio.php?dir=funcoes&file=decla_tipos">Declarando tipos</a></li>
+                    <li><a href="exercicio.php?dir=funcoes&file=funcao_anonima">Funções anôminas</a></li>
+                    
                     </ul>
 
                 </div>
-                <div class="modulo verde">
+
+
+                
+             <!-- <div class="modulo verde">
                     <h3>Módulo 08</h3>
                     
                     <ul>
